@@ -16,9 +16,9 @@ public class MainContoller {
 	@RequestMapping("/")
 	public String getIndexPage() {
 		Book book = new Book("java");
-		System.out.println(b.save(book));
+
 		Book b1 = b.findById(book.getBookId());
-		System.out.println(b1.getBookName());
+
 		return "index";
 	}
 
