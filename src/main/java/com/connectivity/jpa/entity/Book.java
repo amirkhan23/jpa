@@ -12,7 +12,7 @@ public class Book {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int bookId;
-	@Column(name = "BOOKNAME", unique = true)
+	@Column(name = "BOOKNAME")
 	private String bookName;
 
 	public Book() {

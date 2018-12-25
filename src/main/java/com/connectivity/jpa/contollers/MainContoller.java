@@ -17,7 +17,9 @@ public class MainContoller {
 	public String getIndexPage() {
 		Book book = new Book("java");
 
-		Book b1 = b.findById(book.getBookId());
+		b.save(book);
+
+		// Book b1 = b.findById(book.getBookId());
 
 		return "index";
 	}
